@@ -24,3 +24,23 @@ body.space {
 	top: 50%;
 	left: 50%;
 }
+
+#sun {
+	width: 200px;
+	left: 40%;
+}
+
+.earth {
+	animation: move_earth infinite linear ;
+}
+
+/* key frames for all of the planets */
+
+@keyframeas move_earth {
+	0% {
+	transform: rotate(0deg) translateX(0px) 
+}
+	100% {
+	transform: rotate(360deg) translate(50px)
+}
+}
