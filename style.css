@@ -25,22 +25,132 @@ body.space {
 	left: 50%;
 }
 
+/* start of the planet animations */
+
 #sun {
 	width: 200px;
-	left: 40%;
+	animation: move_sun 1s linear infinite;
 }
 
-.earth {
-	animation: move_earth infinite linear ;
+#mercury {
+	animation: move_mercury linear infinite;
+	animation-duration: 2.4s;
+}
+
+#venus {
+	animation: move_venus linear infinite;
+	animation-duration: 6.2s;
+}
+
+#earth {
+	animation: move_earth linear infinite;
+	animation-duration: 10s;
+}
+
+#mars {
+	animation: move_mars linear infinite;
+	animation-duration: 18.8s;
+}
+
+#jupiter {
+	animation: move_jupiter linear infinite;
+	animation-duration: 119s;
+}
+
+#saturn {
+	animation: move_saturn linear infinite;
+	animation-duration: 295s;
+}
+
+#uranus {
+	animation: move_uranus linear infinite;
+	animation-duration: 840.2s;
+}
+
+#neptune {
+	animation: move_neptune linear infinite;
+	animation-duration: 1648s;
 }
 
 /* key frames for all of the planets */
 
-@keyframeas move_earth {
+@keyframes move_sun {
 	0% {
-	transform: rotate(0deg) translateX(0px) 
+	transform: translateX(-80px) translateY(-80px);
 }
-	100% {
-	transform: rotate(360deg) translate(50px)
+	100%{
+	transform: translateX(-80px) translateY(-80px);
+}
+}
+
+@keyframes move_mercury {
+	from {
+	transform: rotate(0deg) translateX(150px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(150px) rotate(-360deg);
+}
+}
+
+@keyframes move_venus {
+	from {
+	transform: rotate(0deg) translateX(250px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(250px) rotate(-360deg);
+}
+}
+
+@keyframes move_earth {
+	from {
+	transform: rotate(0deg) translateX(350px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(350px) rotate(-360deg);
+}
+}
+
+@keyframes move_mars {
+	from {
+	transform: rotate(0deg) translateX(450px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(450px) rotate(-360deg);
+}
+}
+
+@keyframes move_jupiter {
+	from {
+	transform: rotate(0deg) translateX(550px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(550px) rotate(-360deg);
+}
+}
+
+@keyframes move_saturn {
+	from {
+	transform: rotate(0deg) translateX(650px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(650px) rotate(-360deg);
+}
+}
+
+@keyframes move_uranus {
+	from {
+	transform: rotate(0deg) translateX(750px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(750px) rotate(-360deg);
+}
+}
+
+@keyframes move_neptune {
+	from {
+	transform: rotate(0deg) translateX(850px) rotate(0deg);
+}
+	to {
+	transform: rotate(360deg) translateX(850px) rotate(-360deg);
 }
 }
