@@ -72,6 +72,26 @@ body.space {
 	animation-duration: 1648s;
 }
 
+/* embellishments */
+
+.shooting-star {
+	width: 50px;
+	height: 100px;
+	background-color: white;
+	animation-name: shootingstar;
+	animation: linear infinite;
+	animation-duration: 3s;
+}
+
+@keyframes shootingstar {
+	from {
+	transform: translateX(1000px) translateY(-450px);
+}
+	to {
+	transform: translateX(-1000px) translateY(300px);
+}
+}
+
 /* key frames for all of the planets */
 
 @keyframes move_sun {

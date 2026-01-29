@@ -1,5 +1,5 @@
 #project/outline #programming #webdev #htmlcss
-# **CSS Snowman**
+# **CSS Solar System**
 
 ## Summary
 
