@@ -75,20 +75,32 @@ body.space {
 /* embellishments */
 
 .shooting-star {
-	width: 50px;
-	height: 100px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 15px;
 	background-color: white;
-	animation-name: shootingstar;
-	animation: linear infinite;
-	animation-duration: 3s;
+	animation: shooting_star 1s infinite linear;
+	animation-delay: 4s;
 }
 
-@keyframes shootingstar {
+.shooting-star::before {
+	content: "";
+	position: absolute;
+	top: 25%;
+	left: -1150%;
+	transform: translate(50%, 50%);
+	width: 100px;
+	height: 1px;
+	background: linear-gradient(90deg, white, transparent);
+}
+
+@keyframes shooting_star {
 	from {
-	transform: translateX(1000px) translateY(-450px);
+	transform: translateX(1000px) translateY(-400px);
 }
 	to {
-	transform: translateX(-1000px) translateY(300px);
+	transform: translateX(-1000px) translateY(-300px);
 }
 }
 
