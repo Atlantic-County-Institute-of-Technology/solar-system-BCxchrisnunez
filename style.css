@@ -74,14 +74,16 @@ body.space {
 
 /* embellishments */
 
+/*shooting star embillishment*/
+
 .shooting-star {
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;
 	box-shadow: 0 0 15px;
 	background-color: white;
-	animation: shooting_star 1s infinite linear;
-	animation-delay: 4s;
+	animation: shooting_star 5s infinite linear;
+	animation-delay: 1s;
 }
 
 .shooting-star::before {
@@ -99,8 +101,33 @@ body.space {
 	from {
 	transform: translateX(1000px) translateY(-400px);
 }
+	10% {
+		transform: translateX(-1100px) translateY(-300px);
+}
 	to {
-	transform: translateX(-1000px) translateY(-300px);
+		transform: translateX(-1100px) translateY(-300px);
+}
+}
+
+/* UFO embellishment */
+
+#ufo {
+	position: relative;
+	width: 115px;
+	height: 80px;
+	animation: move_ufo 6.5s infinite linear;
+	animation-delay: 1s;
+}
+
+@keyframes move_ufo {
+	from {
+	transform: translateX(-1500px);
+}
+	65% {
+	transform: translateX(600px);
+}
+	to {
+	transform: translateX(600px);
 }
 }
 
@@ -117,72 +144,72 @@ body.space {
 
 @keyframes move_mercury {
 	from {
-	transform: rotate(0deg) translateX(150px) rotate(0deg);
+	transform: rotate(0deg) translateX(150px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(150px) rotate(-360deg);
+	transform: rotate(360deg) translateX(150px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_venus {
 	from {
-	transform: rotate(0deg) translateX(250px) rotate(0deg);
+	transform: rotate(0deg) translateX(250px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(250px) rotate(-360deg);
+	transform: rotate(360deg) translateX(250px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_earth {
 	from {
-	transform: rotate(0deg) translateX(350px) rotate(0deg);
+	transform: rotate(0deg) translateX(350px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(350px) rotate(-360deg);
+	transform: rotate(360deg) translateX(350px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_mars {
 	from {
-	transform: rotate(0deg) translateX(450px) rotate(0deg);
+	transform: rotate(0deg) translateX(450px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(450px) rotate(-360deg);
+	transform: rotate(360deg) translateX(450px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_jupiter {
 	from {
-	transform: rotate(0deg) translateX(550px) rotate(0deg);
+	transform: rotate(0deg) translateX(550px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(550px) rotate(-360deg);
+	transform: rotate(360deg) translateX(550px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_saturn {
 	from {
-	transform: rotate(0deg) translateX(650px) rotate(0deg);
+	transform: rotate(0deg) translateX(650px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(650px) rotate(-360deg);
+	transform: rotate(360deg) translateX(650px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_uranus {
 	from {
-	transform: rotate(0deg) translateX(750px) rotate(0deg);
+	transform: rotate(0deg) translateX(750px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(750px) rotate(-360deg);
+	transform: rotate(360deg) translateX(750px) rotate(-360deg) rotate(360deg);
 }
 }
 
 @keyframes move_neptune {
 	from {
-	transform: rotate(0deg) translateX(850px) rotate(0deg);
+	transform: rotate(0deg) translateX(850px) rotate(0deg) rotate(0deg);
 }
 	to {
-	transform: rotate(360deg) translateX(850px) rotate(-360deg);
+	transform: rotate(360deg) translateX(850px) rotate(-360deg) rotate(360deg);
 }
 }
